@@ -28,4 +28,3 @@ puts "----------"
 
 @store1.save
 @store2.save
-@store3.save
