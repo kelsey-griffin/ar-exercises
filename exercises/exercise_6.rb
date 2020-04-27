@@ -26,5 +26,15 @@ puts "----------"
 @store2.employees.create(first_name: "Jackie", hourly_rate: 100)
 @store2.employees.create(first_name: "Robin", last_name: "Hart", hourly_rate: 10)
 
-@store1.save
-@store2.save
+# @store1.valid? ? @store1.save : @store1.errors.messages
+if @store1.valid?
+  @store1.save
+else
+  puts @store1.errors.messages
+end 
+
+if @store2.valid?
+  @store2.save
+else
+  puts @store2.errors.messages
+end 
