@@ -11,6 +11,6 @@ puts "----------"
 
 puts @store1.name
 
-@store1.name = "Kelsey's Store"
+@store1.update(name: "Kelsey's Store")
 
 puts @store1.name
